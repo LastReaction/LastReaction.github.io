@@ -44,6 +44,7 @@ a:hover {
 .category {
   font-weight: normal;
   padding-right: 0;
+  text-decoration: underline !important;
 }
 
 .category:hover {
