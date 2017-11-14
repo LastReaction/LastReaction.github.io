@@ -20,8 +20,8 @@
           </p>
           <div class="col-lg-12">
             <div class="input-group input-group-lg wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-              <form class="searchForm" method="get" action="https://duckduckgo.com/" _lpchecked="1">
-  			     <input id="duckduckgo" class="text-center" placeholder="DuckDuckGo Search" autocomplete="off" name="q" search_="" type="text">
+              <form id="duckduckgo" method="get" action="https://duckduckgo.com/" _lpchecked="1">
+  			     <input id="searchbar" class="text-center" placeholder="DuckDuckGo Search" autocomplete="off" name="q" search_="" type="text">
   		       </form>
            </div>
          </div>
@@ -161,14 +161,6 @@
     <script>
       new WOW().init();
     </script>
-    <script>
-    function duckSearch() {
-        var searchField = document.getElementById("duckduckgo");
-        if (searchField && searchField.value) {
-            var query = escape(searchField.value);
-            window.location.href = "https://duckduckgo.com/?q=" + query;
-        }
-    }
-</script>
+    <script>duckduckgo.searchbar.focus();</script>
   </body>
 </html>
