@@ -1,7 +1,8 @@
 body {
-  background-image: url('../img/bg.png');
-  background-size: cover;
+  background-color: #46424F;
+  background-image: url('../img/utaha.png');
   background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 a {
